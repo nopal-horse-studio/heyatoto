@@ -1,7 +1,11 @@
 # Hey Atoto.
 
-* https://developers.facebook.com/tools/debug
-* https://cards-dev.twitter.com/validator
+* Depurar URL para Facebook [Go to](https://developers.facebook.com/tools/debug).
+* Depurar URL para Twitter [Go to](https://cards-dev.twitter.com/validator).
 
-* Depurar URL para Facebook.
-* Depurar URL para Twitter.
+### Architecture.
+- Home.
+- Nosotros.
+- Error 404
+- Negocios.
+- Profile negocio.
