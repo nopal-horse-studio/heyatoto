@@ -2599,8 +2599,8 @@ form {
 .home__about {
   width: 100%;
   position: relative;
-  padding-top: 85px;
-  padding-bottom: 85px; }
+  padding-top: 40vh;
+  padding-bottom: 40vh; }
   .home__about h1 {
     color: white; }
   .home__about h2 {
