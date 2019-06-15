@@ -1592,10 +1592,10 @@ button:hover,
 /* = Size Breakpoints
 -----------------------------------------------------------------------------*/
 :root {
-  --color-brand: 		#D70926;
+  --color-brand: 		#013AD2;
   --color-primary:	#DDCFCF;
   --color-secundary: #25406B;
-  --color-text:			#ffffff;
+  --color-text:			#222222;
   --color-text-light:	#7a7a7a;
   --color-text-black:	#000000;
   --color-link:			#D70926;
@@ -1646,7 +1646,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-title), sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: var(--color-text);
   line-height: 1.2; }
 
 /* =Text
@@ -1774,79 +1773,9 @@ pre, code {
   width: 100%;
   position: relative;
   padding-top: 5%;
-  padding-bottom: 5%;
-  background-color: white;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .footer {
-      text-align: center; } }
-
-.footer__row {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.footer__logo {
-  width: 100%;
-  position: relative;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .footer__logo {
-      margin-bottom: 10px; } }
-  .footer__logo a {
-    font-family: var(--font-text-serif), serif;
-    font-style: normal;
-    font-weight: 700;
-    color: var(--color-brand);
-    text-decoration: none; }
-    .footer__logo a span {
-      display: block; }
-    .footer__logo a:hover {
-      text-decoration: none; }
-
-.footer__address {
-  color: var(--color-text-light);
-  margin: 0;
-  text-align: right;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .footer__address {
-      text-align: center; } }
-
-.footer__copy {
-  width: 100%;
-  position: relative;
-  text-align: center; }
-  .footer__copy p {
-    color: var(--color-text-light);
-    margin: 0; }
+  padding-bottom: 5%; }
+  .footer span {
+    color: white; }
 
 .header {
   width: 100%;
@@ -2667,8 +2596,27 @@ form {
     height: auto;
     border-radius: 0; }
 
-.page {
+.home__about {
   width: 100%;
   position: relative;
-  padding-top: 10%;
-  padding-bottom: 10%; }
+  padding-top: 85px;
+  padding-bottom: 85px; }
+  .home__about h1 {
+    color: white; }
+  .home__about h2 {
+    color: white; }
+  .home__about p {
+    color: white; }
+
+.home__business {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  padding-top: 85px;
+  padding-bottom: 85px; }
+  .home__business h2 {
+    color: var(--color-brand); }
+
+.page {
+  width: 100%;
+  position: relative; }
