@@ -1,0 +1,38 @@
+:root{
+	//= Primary colors
+	--color-brand: 		#D70926;
+	--color-primary:	#DDCFCF;
+	--color-secundary: #25406B;
+
+	//= Text colors
+	--color-text:			#ffffff;
+	--color-text-light:	#7a7a7a;
+	--color-text-black:	#000000;
+
+	//= Link colors
+	--color-link:			#D70926;
+	--color-link-hover:	#000000;
+
+	//= Accents colors
+	--color-accent:		#F0EDE3;
+	--color-divider:		rgba(0,0,0,0.10);
+	--color-elements:	#000000;
+
+	--color-placeholder:		#cccccc;
+	--color-selection: 			#ead4ff;
+	--color-selection-text:	#000000;
+
+	//= Body style
+	--body-color:		#000;
+	--body-size-text:	1rem;
+	--body-line-height: 1.5;
+
+	--font-title: 'IBM Plex Sans', sans-serif;
+	--font-title-bold:'IBM Plex Sans', sans-serif;
+
+	--font-text:'IBM Plex Sans', sans-serif;
+	--font-text-bold: 'IBM Plex Sans', sans-serif;
+
+	--font-text-serif: 'IBM Plex Serif', serif;
+	--font-text-mono: 'IBM Plex Mono', monospace;
+}

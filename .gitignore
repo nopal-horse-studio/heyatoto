@@ -1,6 +1,4 @@
-scss/*
-css/*
+README.html
 node_modules/*
-!/css/app.min.css
 package-lock.json
 prepros-6.config

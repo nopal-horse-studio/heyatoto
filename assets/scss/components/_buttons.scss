@@ -1,0 +1,131 @@
+/*
+	Default style for button
+*/
+$btn-color:		#000;
+$btn-padding: 1.125rem 1.875rem;
+
+.button{
+	border-radius: 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	@include transition(0.3s);
+	&:hover{
+		@include transition(0.3s);
+		text-decoration: none;
+	}
+}
+
+.button-primary{
+	color: white;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+	border: 1px solid white;
+	background-color: $btn-color;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+	//= 60px
+	padding-left: 2.5rem;
+	@include media(large){
+		font-size: 1rem;
+		padding-left: 3.125rem;
+	}
+	@include media(full){
+		font-size: 1rem;
+		padding-left: 3.75rem;
+	}
+	&:hover{
+		color: $btn-color;
+		background-color: white;
+		text-decoration: none;
+		border: 1px solid $btn-color;
+		span{
+			border-left: 1px solid $btn-color;
+			svg{
+				fill: $btn-color;
+			}
+		}
+	}
+	span{
+		display: inline-block;
+		border-left: 1px solid white;
+		position: relative;
+		//= 60px & 40px
+		margin-left: 2.5rem;
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
+		@include media(large){
+			margin-left: 3.125rem;
+		}
+		@include media(full){
+			margin-left: 3.75rem;
+		}
+		svg{
+			width: 16px;
+			fill: white;
+		}
+	}
+}
+
+.button-secundary{
+	color: $btn-color;
+	font-size: 0.875rem;
+	letter-spacing: 1px;
+	border: 1px solid $btn-color;
+	border-radius: 0;
+	background-color: white;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-right: 0;
+	//= 60px
+	padding-left: 2.5rem;
+	@include transition(0.3s);
+	@include media(large){
+		font-size: 1rem;
+		padding-left: 3.125rem;
+	}
+	@include media(full){
+		font-size: 1rem;
+		padding-left: 3.75rem;
+	}
+	&:hover{
+		color: white;
+		background-color: $btn-color;
+		text-decoration: none;
+		border: 1px solid white;
+		@include transition(0.3s);
+		span{
+			border-left: 1px solid white;
+			@include transition(0.3s);
+			svg{
+				fill: white;
+				@include transition(0.3s);
+			}
+		}
+	}
+	span{
+		display: inline-block;
+		border-left: 1px solid $btn-color;
+		position: relative;
+		//= 60px & 40px
+		margin-left: 2.5rem;
+		padding-top: 1.25rem;
+		padding-bottom: 1.25rem;
+		padding-left: 0.9375rem;
+		padding-right: 0.9375rem;
+		@include transition(0.3s);
+		@include media(large){
+			margin-left: 3.125rem;
+		}
+		@include media(full){
+			margin-left: 3.75rem;
+		}
+		svg{
+			width: 16px;
+			fill: $btn-color;
+			@include transition(0.3s);
+		}
+	}
+}

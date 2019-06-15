@@ -1,0 +1,171 @@
+@mixin title{
+	@include font-face($title, normal, 700);
+}
+
+@mixin title-bold{
+	@include font-face($title-bold, normal, 900);
+}
+
+@mixin text{
+	@include font-face($text, normal, 400);
+}
+
+@mixin text-light{
+	@include font-face($text-light, normal, 300);
+}
+
+@mixin text-bold{
+	@include font-face($text-bold, normal, 700);
+}
+
+@mixin text-serif{
+	@include font-face($text-serif, normal, 400);
+}
+
+@mixin text-serif-bold{
+	@include font-face($text-serif, normal, 700);
+}
+
+@mixin text-mono{
+	@include font-face($text-mono, normal, 400);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html{
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	margin: 0;
+	@include text;
+	font-size: $body-size-text;
+	line-height: $body-line-height;
+	color: $color-text;
+	text-align: left;
+	background-color: $color-body;
+}
+
+/* =Titles
+-----------------------------------------------------------------------------*/
+hgroup{
+
+}
+
+h1, h2, h3, h4, h5, h6{
+	@include title;
+	color: $color-text;
+	line-height: 1.2;
+}
+
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+h4{
+
+}
+
+h5{
+
+}
+
+h6{
+
+}
+
+/* =Text
+-----------------------------------------------------------------------------*/
+a{
+	color: $color-link;
+	&:hover{
+		color: $color-link-hover;
+	}
+}
+
+address{
+	font-style: normal;
+}
+
+em{
+
+}
+
+i{
+
+}
+
+
+p{
+
+}
+
+strong{
+	@include text-bold;
+}
+
+span{
+
+}
+
+svg{
+
+}
+
+/* =Code
+-----------------------------------------------------------------------------*/
+var{
+
+}
+
+pre, code{
+	@include text-mono;
+}
+
+/* =Selection
+-----------------------------------------------------------------------------*/
+::-moz-selection {
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+::selection {
+	color: $color-select-text;
+	background: $color-select-bg;
+}
+
+
+/* =Placeholder
+-----------------------------------------------------------------------------*/
+::-webkit-input-placeholder {
+	color: $color-placeholder;
+}
+
+:-moz-placeholder {
+	color: $color-placeholder;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	color: $color-placeholder;
+	opacity:  1;
+}
+
+:-ms-input-placeholder {
+	color: $color-placeholder;
+}

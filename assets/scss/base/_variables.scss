@@ -1,0 +1,45 @@
+/* =Colors
+-----------------------------------------------------------------------------*/
+$color-brand:				var(--color-brand);
+$color-primary:				var(--color-primary);
+$color-secundary: 			var(--color-secundary);
+
+$color-text:					var(--color-text);
+$color-text-light:			var(--color-text-light);
+$color-text-black:			var(--color-text-black);
+
+$color-link:					var(--color-link);
+$color-link-hover:			var(--color-link-hover);
+
+$color-body:				var(--body-color);
+$color-elements:			var(--color-elements);
+$color-accent:				var(--color-accent);
+$color-divider:				var(--color-divider);
+
+$color-select-bg:	 		var(--color-selection);
+$color-select-text:			var(--color-selection-text);
+$color-placeholder:		var(--color-placeholder);
+
+/* =Fonts
+-----------------------------------------------------------------------------*/
+$title: 			var(--font-title), sans-serif;
+$title-bold: 		var(--font-title-bold), sans-serif;
+
+$text: 			var(--font-text), sans-serif;
+$text-bold: 		var(--font-text-bold), sans-serif;
+
+$text-serif: 		var(--font-text-serif), serif;
+$text-mono:	var(--font-text-mono), monospace;
+
+/* = Sizes
+-----------------------------------------------------------------------------*/
+$body-size-text: 		var(--body-size-text);
+$body-line-height:	 	var(--body-line-height);
+
+/* = Size Breakpoints
+-----------------------------------------------------------------------------*/
+$screen-xs:				576px  !default;
+$screen-sm:				768px  !default;
+$screen-md:			1024px  !default;
+$screen-lg:				1380px  !default;
+$screen-full:			1600px  !default;

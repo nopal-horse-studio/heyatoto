@@ -1,0 +1,33 @@
+.loader{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-color: white;
+	position: fixed;
+	z-index: 100;
+	&.is__disabled{
+		opacity: 0;
+		display: none;
+		visibility: hidden;
+	}
+}
+
+.loader__container{
+	width: 88%;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	@include center-align();
+	text-align: center;
+	@include after;
+	h1{
+		@include text-serif-bold;
+		color: $color-brand;
+		font-size: 1rem;
+		margin: 0;
+	}
+}

@@ -1,0 +1,52 @@
+.footer{
+	width: 100%;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: white;
+	@include media(small){
+		text-align: center;
+	}
+}
+
+.footer__row{
+	align-items: center;
+}
+
+.footer__logo{
+	width: 100%;
+	position: relative;
+	@include media(small){
+		margin-bottom: 10px;
+	}
+	a{
+		@include text-serif-bold;
+		color: $color-brand;
+		text-decoration: none;
+		span{
+			display: block;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+	}
+}
+
+.footer__address{
+	color: $color-text-light;
+	margin: 0;
+	text-align: right;
+	@include media(small){
+		text-align: center;
+	}
+}
+
+.footer__copy{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	p{
+		color: $color-text-light;
+		margin: 0;
+	}
+}
