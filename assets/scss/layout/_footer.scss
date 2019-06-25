@@ -2,8 +2,39 @@
 	width: 100%;
 	position: relative;
 	padding-top: 5%;
+	background-color: $color-elements;
+}
+
+.footer__bottom{
+	width: 100%;
+	text-align: center;
+	position: relative;
+	padding-top: 5%;
 	padding-bottom: 5%;
 	span{
-		color: white;
+		color: $color-text-light;
+		font-size: calRem(14px);
+	}
+}
+
+.footer__social{
+	list-style: none;
+	margin: 0;
+	padding:0 ;
+	@include flex-row();
+	justify-content: flex-end;
+	li{
+		position: relative;
+		+ li{
+			margin-left: 25px;
+		}
+		a{
+			color: white;
+			font-size: calRem(22px);
+			text-decoration: none;
+			&:hover{
+				color: $color-secundary;
+			}
+		}
 	}
 }

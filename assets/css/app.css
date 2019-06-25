@@ -1567,11 +1567,6 @@ button:hover,
 -----------------------------------------------------------------------------*/
 /* =Size viewport height
 -----------------------------------------------------------------------------*/
-.align-items-center {
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
 .is-adapter img {
   display: none;
   opacity: 0;
@@ -1598,15 +1593,15 @@ button:hover,
   --color-text:			#222222;
   --color-text-light:	#7a7a7a;
   --color-text-black:	#000000;
-  --color-link:			#D70926;
-  --color-link-hover:	#000000;
+  --color-link:			#013AD2;
+  --color-link-hover:	#F8B729;
   --color-accent:		#F0EDE3;
   --color-divider:		rgba(0,0,0,0.10);
   --color-elements:	#000000;
   --color-placeholder:		#cccccc;
   --color-selection: 			#ead4ff;
   --color-selection-text:	#000000;
-  --body-color:		#000;
+  --body-color:		#fff;
   --body-size-text:	1rem;
   --body-line-height: 1.5;
   --font-title: 'IBM Plex Sans', sans-serif;
@@ -1700,57 +1695,8 @@ pre, code {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .container {
-      max-width: 960px; } }
-  @media (min-width: 1025px) and (max-width: 1380px) {
-    .container {
-      max-width: 1220px; } }
-  @media (min-width: 1381px) {
-    .container {
-      max-width: 1550px; } }
+  padding-right: 8.33333%;
+  padding-left: 8.33333%; }
 
 .container-fluid {
   width: 100%;
@@ -1759,280 +1705,70 @@ pre, code {
   margin-right: auto;
   margin-left: auto; }
 
-.grid {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: fixed; }
-  .grid > .grid-col {
-    height: 100%;
-    border-left: 1px solid rgba(0, 0, 0, 0.1); }
-
 .footer {
   width: 100%;
   position: relative;
   padding-top: 5%;
+  background-color: var(--color-elements); }
+
+.footer__bottom {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  padding-top: 5%;
   padding-bottom: 5%; }
-  .footer span {
-    color: white; }
+  .footer__bottom span {
+    color: var(--color-text-light);
+    font-size: 0.875rem; }
 
-.header {
-  width: 100%;
-  top: 0;
-  left: 0;
-  z-index: 50;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  .header.is__fixed {
-    position: fixed; }
-  .header.is__relative {
-    position: relative; }
-  .header.is__white {
-    background-color: white;
-    border-bottom: 1px solid var(--color-divider); }
-    .header.is__white .header__logo a {
-      color: black; }
-    .header.is__white .header__navigation li a {
-      color: black; }
-      .header.is__white .header__navigation li a svg {
-        fill: black; }
-  .header.is__black {
-    background-color: transparent; }
-    .header.is__black .header__logo a {
-      color: var(--color-brand); }
-    .header.is__black .header__navigation li a {
-      color: white; }
-      .header.is__black .header__navigation li a svg {
-        fill: white; }
-  .header.is__transparent {
-    background-color: transparent; }
-    .header.is__transparent .header__logo a {
-      color: var(--color-brand); }
-    .header.is__transparent .header__navigation li a {
-      color: black; }
-      .header.is__transparent .header__navigation li a svg {
-        fill: black; }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .header {
-      border: 1px solid var(--color-divider);
-      position: relative !important; } }
-
-.header__container {
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .header__container {
-      padding-left: 15px;
-      padding-right: 15px; }
-      .header__container .is__row {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center; }
-        .header__container .is__row > .col-8 {
-          width: 66.66667% !important; }
-        .header__container .is__row > .col-4 {
-          width: 33.33333% !important; } }
-
-.header__logo {
-  width: 100%;
-  position: relative; }
-  .header__logo a {
-    font-family: var(--font-text-serif), serif;
-    font-style: normal;
-    font-weight: 700;
-    text-decoration: none;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    /* = Small Phones
-	-----------------------------------------------------------------------------*/
-    /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-    /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-    /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-    /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-    .header__logo a:hover {
-      text-decoration: none;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-    @media (min-width: 0px) and (max-width: 768px) {
-      .header__logo a {
-        font-size: 0.875rem; } }
-
-.header__navigation {
+.footer__social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .header__navigation li {
+  justify-content: flex-end; }
+  .footer__social li {
     position: relative; }
-    .header__navigation li + li {
-      margin-left: 35px;
-      /* = Small Phones
-	-----------------------------------------------------------------------------*/
-      /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-      /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-      /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-      /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-      @media (min-width: 0px) and (max-width: 768px) {
-        .header__navigation li + li {
-          margin-left: 15px; } }
-    .header__navigation li a {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
+    .footer__social li + li {
+      margin-left: 25px; }
+    .footer__social li a {
       color: white;
-      font-size: 0.875rem;
-      letter-spacing: 1px;
-      text-decoration: none;
-      text-transform: uppercase;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      /* = Small Phones
-	-----------------------------------------------------------------------------*/
-      /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-      /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-      /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-      /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-      @media (min-width: 0px) and (max-width: 768px) {
-        .header__navigation li a {
-          font-size: 0.75rem; } }
-      .header__navigation li a span {
-        /* = Small Phones
-	-----------------------------------------------------------------------------*/
-        /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-        /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-        /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-        /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-        @media (min-width: 0px) and (max-width: 768px) {
-          .header__navigation li a span {
-            display: none; } }
-      .header__navigation li a svg {
-        width: 16px;
-        position: relative;
-        margin-left: 5px;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out;
-        /* = Small Phones
-	-----------------------------------------------------------------------------*/
-        /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-        /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-        /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-        /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-        @media (min-width: 0px) and (max-width: 768px) {
-          .header__navigation li a svg {
-            width: 18px;
-            fill: black !important; } }
-      .header__navigation li a:hover {
-        color: var(--color-brand) !important;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-        .header__navigation li a:hover svg {
-          fill: var(--color-brand) !important;
-          -webkit-transition: all 0.3s ease-in-out;
-          -moz-transition: all 0.3s ease-in-out;
-          -ms-transition: all 0.3s ease-in-out;
-          -o-transition: all 0.3s ease-in-out;
-          transition: all 0.3s ease-in-out; }
-        .header__navigation li a:hover .svg-menu-top {
-          -webkit-transform: matrix(1, 0, 0, 1, 0, 20);
-          -ms-transform: matrix(1, 0, 0, 1, 0, 20);
-          transform: matrix(1, 0, 0, 1, 0, 20); }
-        .header__navigation li a:hover .svg-menu-bottom {
-          -webkit-transform: matrix(1, 0, 0, 1, 0, -20);
-          -ms-transform: matrix(1, 0, 0, 1, 0, -20);
-          transform: matrix(1, 0, 0, 1, 0, -20); }
+      font-size: 1.375rem;
+      text-decoration: none; }
+      .footer__social li a:hover {
+        color: var(--color-secundary); }
 
-.header__navigation__download {
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .header__navigation__download {
-      display: none !important; } }
+.header {
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 50;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: absolute;
+  background-color: white; }
+  .header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+    .header nav ul li {
+      position: relative; }
+      .header nav ul li a {
+        font-family: var(--font-title), sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: var(--color-text);
+        text-decoration: none; }
 
 .loader {
   width: 100%;
@@ -2069,236 +1805,6 @@ pre, code {
     color: var(--color-brand);
     font-size: 1rem;
     margin: 0; }
-
-.menu {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  background-color: rgba(31, 31, 31, 0.99);
-  z-index: 100;
-  opacity: 0;
-  visibility: hidden; }
-
-.menu__close {
-  top: 30px;
-  right: 40px;
-  position: absolute;
-  z-index: 20;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .menu__close {
-      right: 15px;
-      position: fixed; } }
-  .menu__close button {
-    border: 0;
-    border-radius: 0;
-    padding: 5px;
-    background-color: transparent; }
-    .menu__close button svg {
-      width: 22px;
-      fill: white;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
-      /* = Small Phones
-	-----------------------------------------------------------------------------*/
-      /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-      /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-      /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-      /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-      @media (min-width: 0px) and (max-width: 768px) {
-        .menu__close button svg {
-          width: 18px; } }
-    .menu__close button:hover svg {
-      fill: var(--color-brand);
-      -webkit-transform: rotate(44deg);
-      -ms-transform: rotate(44deg);
-      transform: rotate(44deg);
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out; }
-
-.menu__container {
-  width: 100%;
-  top: 50%;
-  opacity: 0;
-  visibility: hidden;
-  -moz-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  position: absolute;
-  /* = Small Phones
-	-----------------------------------------------------------------------------*/
-  /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-  /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-  /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-  /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-  @media (min-width: 0px) and (max-width: 768px) {
-    .menu__container {
-      top: 0;
-      -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-      transform: translateY(0);
-      position: relative;
-      padding-top: 35px;
-      padding-bottom: 30px; } }
-  .menu__container .row .col-4 {
-    /* = Small Phones
-	-----------------------------------------------------------------------------*/
-    /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-    /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-    /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-    /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-    @media (min-width: 0px) and (max-width: 768px) {
-      .menu__container .row .col-4 {
-        -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-        order: -1; } }
-
-.menu__information {
-  width: 100%;
-  position: relative; }
-  .menu__information label {
-    font-family: var(--font-text-bold), sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    color: var(--color-text-light);
-    /* = Small Phones
-	-----------------------------------------------------------------------------*/
-    /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-    /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-    /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-    /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-    @media (min-width: 1381px) {
-      .menu__information label {
-        font-size: 26px; } }
-  .menu__information p {
-    color: white;
-    margin: 0;
-    /* = Small Phones
-	-----------------------------------------------------------------------------*/
-    /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-    /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-    /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-    /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-    @media (min-width: 1381px) {
-      .menu__information p {
-        font-size: 22px; } }
-
-.menu__information__button {
-  width: 100%;
-  position: relative;
-  padding-top: 5%; }
-  .menu__information__button p {
-    color: var(--color-text-light);
-    font-size: 0.875rem;
-    margin-bottom: 25px; }
-
-.menu__options {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  .menu__options li {
-    position: relative;
-    margin-bottom: 25px; }
-    .menu__options li a {
-      font-family: var(--font-title), sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      color: white;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      text-decoration: none;
-      position: relative;
-      padding: 0.8rem;
-      -webkit-transition: all 0.35s ease-in-out;
-      -moz-transition: all 0.35s ease-in-out;
-      -ms-transition: all 0.35s ease-in-out;
-      -o-transition: all 0.35s ease-in-out;
-      transition: all 0.35s ease-in-out;
-      /* = Small Phones
-	-----------------------------------------------------------------------------*/
-      /* = Smarthphone
-	-----------------------------------------------------------------------------*/
-      /* = Tablet & Laptop Smalll
-	-----------------------------------------------------------------------------*/
-      /* = Laptop Big & Desktop
-	-----------------------------------------------------------------------------*/
-      /* = Desktop & Full HD
-	-----------------------------------------------------------------------------*/ }
-      .menu__options li a:before {
-        content: '';
-        width: 0;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-color: white;
-        z-index: -1;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-      @media (min-width: 1381px) {
-        .menu__options li a {
-          font-size: 3.875rem; } }
-      .menu__options li a:hover {
-        color: var(--color-brand);
-        text-decoration: none;
-        -webkit-transition: all 0.3s ease-in-out;
-        -moz-transition: all 0.3s ease-in-out;
-        -ms-transition: all 0.3s ease-in-out;
-        -o-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease-in-out; }
-        .menu__options li a:hover:before {
-          width: 100%;
-          -webkit-transition: all 0.35s ease-in-out;
-          -moz-transition: all 0.35s ease-in-out;
-          -ms-transition: all 0.35s ease-in-out;
-          -o-transition: all 0.35s ease-in-out;
-          transition: all 0.35s ease-in-out; }
 
 /*
 	Default style for button
@@ -2596,17 +2102,16 @@ form {
     height: auto;
     border-radius: 0; }
 
+.home {
+  width: 100%;
+  position: relative; }
+
 .home__about {
   width: 100%;
   position: relative;
-  padding-top: 40vh;
-  padding-bottom: 40vh; }
-  .home__about h1 {
-    color: white; }
-  .home__about h2 {
-    color: white; }
-  .home__about p {
-    color: white; }
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center; }
 
 .home__business {
   width: 100%;
@@ -2615,7 +2120,58 @@ form {
   padding-top: 85px;
   padding-bottom: 85px; }
   .home__business h2 {
-    color: var(--color-brand); }
+    color: var(--color-brand);
+    margin-bottom: 25px; }
+  .home__business ul li {
+    position: relative;
+    margin-bottom: 35px; }
+    .home__business ul li h4 {
+      margin: 0; }
+    .home__business ul li span {
+      font-family: var(--font-text-mono), monospace;
+      font-style: normal;
+      font-weight: 400; }
+
+.home__join {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+  overflow: hidden; }
+
+.home__join__image {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 5; }
+  .home__join__image img {
+    opacity: 0;
+    visibility: hidden; }
+
+.home__join__filter {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 15; }
+
+.home__join__text {
+  top: 50%;
+  right: 8.33333%;
+  left: 8.33333%;
+  z-index: 20;
+  position: absolute; }
+  .home__join__text h1 {
+    color: white; }
+  .home__join__text p {
+    color: white; }
 
 .page {
   width: 100%;
